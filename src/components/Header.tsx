@@ -30,7 +30,7 @@ const Header = () => {
 
       <div className="flex gap-6 md:gap-8 items-center md:pb-8">
         <div className="relative">
-        {count > 0 && addToCart && <div className="absolute -top-2 -right-2 text-[10px] text-white bg-orange-300 px-[6px] rounded-full">
+        {count > 0 && addToCart && <div className="absolute -top-2 -right-2 text-[10px] text-white bg-orange-400 px-[6px] rounded-full">
           {count}
         </div>}
         <img src="icon-cart.svg" alt="cart icon" className="w-6 h-6 md:w-5 md:h-5 cursor-pointer" onClick={() => setToggleCart(!toggleCart)}/>

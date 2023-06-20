@@ -70,13 +70,13 @@ const Product = () => {
     }
 
   return (
-    <div className=" pt-5 md:px-12 md:pt-20 md:pb-12 md:flex md:gap-12 lg:gap-24">
+    <div className="pt-5 md:px-12 md:pt-20 md:pb-12 md:flex md:gap-12 lg:gap-24">
 
     {toggleModal && <Modal imgData= {imgData} setImgData= {setImgData} setToggleModal= {setToggleModal}/>}
     <div className="">
     <div className="relative">
     <img src={imgData[index]?.bigImageUrl} alt="big product image"  className="hidden md:block md:rounded-2xl md:w-[460px] md:h-[400px] object-fill cursor-pointer" onClick={() => setToggleModal(true)}/>
-    <img src={imgData[mobileIndex]?.bigImageUrl} alt="big product image"  className="md:hidden object-fill cursor-pointer h-[19rem] w-full"/>
+    <img src={imgData[mobileIndex]?.bigImageUrl} alt="big product image"  className="md:hidden pt-2 cursor-pointer h-[20rem] min-w-full object-center"/>
 
     <img src="icon-previous.svg" alt="" className="absolute top-36 bg-white h-8 w-8 p-2 rounded-full left-3 md:hidden" onClick={() => {
         if (mobileIndex === 0){
@@ -103,18 +103,18 @@ const Product = () => {
         }
     </div>
     </div>
-    <div className="w-full md:w-[50%] px-7 py-6 md:px-0 md:py-14">
-       <p className="text-orange-500 font-bold uppercase">sneaker company</p>
-       <p className="font-bold text-4xl pt-4 pb-8 capitalize w-[400px]">fall limited edition sneakers</p>
-       <p className="w-full leading-7 tracking-wide text-sm mb-5">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+    <div className="w-full md:w-[50%] py-6 md:px-0 md:py-14">
+       <p className="text-orange-500 font-bold uppercase px-7 md:px-0">sneaker company</p>
+       <p className="font-bold text-3xl px-7 pt-4 pb-6 md:pb-8 capitalize w-[400px]">fall limited edition sneakers</p>
+       <p className="w-full leading-6 tracking-wide text-sm mb-5 text-gray-500 font-semibold px-7 md:px-0">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
 
-        <div className="flex justify-between items-center mb-4 md:mb-0 md:flex-col md:justify-start md:items-start">
-       <p className="text-3xl font-bold flex items-center">$125.00 <span className="ml-4 text-sm bg-orange-200 text-orange-500 md:px-2 py-1 rounded-[5px]">50%</span></p>
+      <div className="flex justify-between mb-6 md:mb-0 md:flex-col md:justify-start md:items-start px-7 md:px-0">
+       <p className="text-3xl font-bold flex items-center">$125.00 <span className="ml-4 text-sm bg-orange-200 text-orange-500 px-2 py-1 rounded-[5px]">50%</span></p>
 
-       <p className="mt-2 mb-8 line-through text-sm text-gray-500 font-semibold">$250.00</p>
+       <p className="mt-2 md:mb-8 line-through text-sm  text-gray-500 font-semibold">$250.00</p>
        </div>
 
-       <div className="md:flex w-full md:gap-3">
+       <div className="md:flex w-full md:gap-3 px-7 md:px-0">
         <div className="w-full py-4 px-4 mb-5 md:w-[30%] text-center md:py-3 bg-zinc-100 text-black text-sm font-bold rounded-lg flex justify-between items-center md:mb-0 md:px-4">
             <img src="icon-minus.svg" alt="minus" className="w-2 h-1 cursor-pointer" onClick={() => setCount(count - 1)}/>
             <span>{count > 0 ? count : 0}</span>
