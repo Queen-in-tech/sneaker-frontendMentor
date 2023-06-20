@@ -105,7 +105,7 @@ const Product = () => {
     </div>
     <div className="w-full md:w-[50%] py-6 md:px-0 md:py-14">
        <p className="text-orange-500 font-bold uppercase px-7 md:px-0">sneaker company</p>
-       <p className="font-bold text-3xl px-7 pt-4 pb-6 md:pb-8 capitalize w-[400px]">fall limited edition sneakers</p>
+       <p className="font-bold text-3xl px-7 md:px-0 pt-4 pb-6 md:pb-8 capitalize w-[400px]">fall limited edition sneakers</p>
        <p className="w-full leading-6 tracking-wide text-sm mb-5 text-gray-500 font-semibold px-7 md:px-0">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
 
       <div className="flex justify-between mb-6 md:mb-0 md:flex-col md:justify-start md:items-start px-7 md:px-0">

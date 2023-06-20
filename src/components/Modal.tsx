@@ -28,7 +28,7 @@ const Modal= ({ imgData, setImgData, setToggleModal }: { imgData: ImageData[]; s
         setIndex(id)
     }
   return (
-    <div className="hidden bg-black/80 w-full h-full top-0 bottom-0 right-0 left-0 absolute z-10 md:flex justify-center items-center">
+    <div className="hidden bg-black/80 md:w-full h-full top-0 bottom-0 right-0 left-0 absolute z-10 md:flex justify-center items-center">
         <div className="z-20 flex flex-col gap-5 relative">
         <img src="icon-close.svg" alt="" className="h-6 w-6 absolute -top-10 right-0 cursor-pointer" onClick={() => setToggleModal(false)}/>
         <div>
