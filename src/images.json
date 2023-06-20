@@ -1,0 +1,31 @@
+[
+    {
+      "smallImageUrl": "image-product-1-thumbnail.jpg",
+      "bigImageUrl": "image-product-1.jpg",
+      "id": "0"
+    },
+    {
+      "smallImageUrl": "image-product-2-thumbnail.jpg",
+      "bigImageUrl": "image-product-2.jpg",
+      "id": "1"
+    },
+    {
+      "smallImageUrl": "image-product-3-thumbnail.jpg",
+      "bigImageUrl": "image-product-3.jpg",
+      "id": "2"
+    },
+    {
+        "smallImageUrl": "image-product-4-thumbnail.jpg",
+        "bigImageUrl": "image-product-4.jpg",
+        "id": "3"
+      }
+  ]
+ 
+  
+  
+  
+  
+  
+  
+  
+  

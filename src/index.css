@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ .navLinks { @apply pb-10 hover:text-gray-900 cursor-pointer hover:border-b-[3px] hover:border-orange-500 hover:font-semibold}
