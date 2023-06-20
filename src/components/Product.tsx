@@ -28,7 +28,7 @@ const Product = () => {
     useEffect(() => {
         const imageData = async() => {
             try {
-            const res =  await fetch("./src/images.json")
+            const res =  await fetch("images.json")
             const data = await res.json()
             const updatedData = data.map((image: ImageData, idx: number) => ({
                 ...image,
